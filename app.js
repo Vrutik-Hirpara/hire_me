@@ -19,6 +19,7 @@ const startServer = async () => {
     await sequelize.authenticate();
     console.log("Database Connected");
 
+
     await sequelize.sync();
     console.log("Tables Synced");
 
