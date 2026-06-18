@@ -7,12 +7,12 @@ const app = express();
 
 app.use(express.json());
 
-const jobCategoryRoutes = require("./routes/jobCategory/jobCategoryRoutes");
+const jobCategoryRoutes = require("./src/routes/jobCategory/jobCategoryRoutes");
 
 app.use("/api/job-categories", jobCategoryRoutes);
 
 
-const sequelize = require("./config/db");
+const sequelize = require("./src/config/db");
 
 const startServer = async () => {
   try {
